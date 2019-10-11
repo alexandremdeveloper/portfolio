@@ -4,34 +4,29 @@
 
 .container-line {
    display: flex;
-   padding-left: 2%;
+   margin: 0 auto;
+   width: 100%;
 }
 
 .border-top {
     border-top: 1px solid black;
     border-right: 1px solid black;
-    width: 40%;
-    height: 20%;
-    margin-top: 20%;
+    
 }
 
 .text-profile {
-    margin-top: 10%;
-    margin-left: 20%;
 
 }
 
 .name {
-    margin-bottom: 20px;    
+    
+    font-size: 44px;  
 }
 
 .border-bottom {
     border-bottom: 1px solid black;
     border-right: 1px solid black;
-    width: 40%;
-    height: 60%;
-    margin-bottom: 50%;
-    margin-top: 10%;
+    
 }
 
 
