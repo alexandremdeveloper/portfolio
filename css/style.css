@@ -1,23 +1,22 @@
- *{
-    margin: 0px;
-    padding: 0px;
+
+
+.all-content {
+    width: 100%;
 }
 
 .img {
-    padding: 16px;
+    width: 96%;
+    padding: 16px 5px;
 }
 
 .container-main {
-    width: 80%;
-    margin: 0 auto;
-    padding: 30px 0;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    padding: 15px 5px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .text-profile {
-    display: flex;
+    width: 100%;
     flex-direction: column;
     align-self: center;
 }
@@ -86,15 +85,14 @@
     height: 100%;
 }
 .graphic-skill {
-    padding: 16px 15px;
+    padding: 16px 5px;
 }
 
 .about-content {
     margin-bottom: 15%;
 }
 .text-about {
-    padding: 16px 15px;
-    width: 100%;
+    padding: 15px 5px;
     font-size: 16px;
     margin-bottom: 15px;
     letter-spacing: 1.5px;
@@ -103,7 +101,8 @@
 }
 
 .tcs {
-    color: #414141;
+    color: #494949;
+    
 }
 
 .tcs-name {
@@ -111,26 +110,36 @@
     text-align: center;
 }
 
-.experience {
-    margin: 0 auto;
-    width: 80%;
+.experiencia {
+    padding-left: 5px;
+    padding-right: 5px;
     padding-bottom: 60px;
-    display: flex;
 }
 
-.experience1 {
+.experiencia1 {
     display: flex;
+    margin-left: 5px;
 }
 
-.border-x {
+.location {
+    margin-left: 15px;
+}
+
+.disabled {
+    margin-left: 14px;
+}
+
+.text-experiencia1 {
+    width: 80%;
+    margin-left: 5px;
     display: flex;
-    flex-direction: column;
 }
 
 .border-dotted {
-    height: 10%;
+    height: 275%;
     width: 2px;
-    border-left: 1 px dotted grey;
+    margin-left: 24px;
+    border-left: 3px dotted grey;
 }
 
 .footer {

@@ -1,16 +1,15 @@
 /* Main menu positionning */
-
-.container::before{
-  position: relative;
-  top: 0; right: 0;
-  bottom: 0; left: 0;
-  overflow: hidden;
-  height: 20%;
-  background: linear-gradient(to bottom, #eee, #ddd);
+body {
+  margin: 0;
 }
 
 .name-logo {
-  padding: 16px 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  width: 100%;
+  font-size: 25px;
+  background-color: #E6E6E6;
 }
 
 .main-nav {
@@ -64,8 +63,8 @@
 
 .main-nav li {
   display: block;
-  margin: .5rem 0;
-  text-align: right;
+  /* margin: .5rem 0; */
+  text-align: left;
   transform: skew(16deg);
 }
 
@@ -80,19 +79,20 @@
   transform: translateY(0);
 }
 .main-nav li:nth-child(1) a {
-transition: all 275ms 175ms
+transition: all 275ms 175ms;
+margin-right: 40px;
 }
 .main-nav li:nth-child(2) a {
-transition: all 275ms 225ms
+transition: all 275ms 225ms;
+margin-right: 50px;
 }
 .main-nav li:nth-child(3) a {
-transition: all 275ms 275ms
+transition: all 275ms 275ms;
+margin-right: -8px;
 }
 .main-nav li:nth-child(4) a {
-transition: all 275ms 325ms
-}
-.main-nav li:nth-child(5) a {
-transition: all 275ms 375ms
+transition: all 275ms 325ms;
+margin-right: 23px;
 }
 
 
@@ -114,8 +114,8 @@ font-weight: bold;
 /* Burger Style */
 .open-main-nav {
 position: absolute;
-top: 15px;
-padding-top: 20px;
+top: 30px;
+padding-top: 14px;
 right: 15px;
 z-index: 1000;
 background: none;
@@ -180,85 +180,3 @@ text-align: center;
 color: #5A3B5D;
 }
 
-
-
-/* Slow motion button */
-[id="slowmo"] {
-position: absolute;
-top: 20px;
-right: 20px;
-padding: 10px;
-border: 0;
-font-size: 1rem;
-background: #FEDC2A;
-color: #5A3B5D;
-font-weight: bold;
-cursor: pointer;
-transition: all .275s;
-}
-
-[id="slowmo"] span {
-display: block;
-font-weight: normal;
-}
-
-[id="slowmo"]:hover,
-[id="slowmo"]:focus {
-background: #5A3B5D;
-color: #FEDC2A;
-}
-
-[id="slowmo"].is-slowmo span:after {
-content: 'Activated';
-display: block;
-font-weight: bold;
-}
-
-/* When slowmotion is activated */
-
-.is-slowmo + .device .open-main-nav .burger,
-.is-slowmo + .device .open-main-nav .burger:before,
-.is-slowmo + .device .open-main-nav .burger:after,
-.is-slowmo + .device .main-nav,
-.is-slowmo + .device .main-nav::before,
-.is-slowmo + .device .main-nav a {
-transition-duration: 3s;
-}
-.is-slowmo + .device .main-nav li:nth-child(1) a {
-transition-delay: 1750ms
-}
-.is-slowmo + .device .main-nav li:nth-child(2) a {
-transition-delay: 2250ms
-}
-.is-slowmo + .device .main-nav li:nth-child(3) a {
-transition-delay: 2750ms
-}
-.is-slowmo + .device .main-nav li:nth-child(4) a {
-transition-delay: 3250ms
-}
-.is-slowmo + .device .main-nav li:nth-child(5) a {
-transition-delay: 3750ms
-}
-
-/* Notice */
-.notice {
-position: absolute;
-bottom: -15px;
-left: 0; right: 0;
-padding: 20px;
-background: #F2F2F2;
-color: #5A3B5D;
-font-size: 14px;
-font-weight: 400;
-line-height: 1.5;
-z-index: 100;
-text-align: center;
-}
-.notice strong {
-font-weight: 700;
-}
-.notice a {
-padding: 2px 3px;
-background: #FEDC2A;
-text-decoration: none;
-}

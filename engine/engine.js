@@ -21,3 +21,25 @@ window.addEventListener('load', function(e) {
 		}, 3500);
 	}, 5500);
 });
+
+jQuery(document).ready(function() {
+	jQuery('li').click(function(){
+			switch(jQuery(this).text().trim()){
+			case 'Sobre mim':
+		  $('html, body').animate({
+			  scrollTop: 0
+		  }, 500);
+		  break;
+		  case 'Projetos':
+		  $('html, body').animate({
+			  scrollTop: 500
+		  }, 500);
+		  break;
+		  case 'Experiências':
+		  $('html, body').animate({
+			  scrollTop: 1000
+		  }, 500);
+		  break;
+		}
+	})
+  });
