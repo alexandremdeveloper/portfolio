@@ -1,15 +1,18 @@
 /* Main menu positionning */
-body {
+body, html {
   margin: 0;
+  padding: 0;
 }
 
 .name-logo {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
   width: 100%;
+  margin: 0;
   font-size: 25px;
   background-color: #E6E6E6;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-nav {
@@ -32,7 +35,7 @@ body {
   visibility: visible;
 }
 
-/* Yellow band effect */
+/* effect in the click */
 
 .main-nav::before {
  content: '';
@@ -41,7 +44,7 @@ body {
   bottom: 0;
   left: 0;
   right: -15px;
-  background: #FEDC2A;
+  background: #919191;
   transform-origin: 0 0;
   transform: skew(-14deg) translateX(-120%);
   transition: all .275s .1s;
@@ -52,10 +55,11 @@ body {
 }
 
 /* Skewing effect on menu links */
+
 .main-nav ul {
   display: inline-flex;
   flex-direction: column;
-  height: 93%; /* Should be 100%, but we have a notice message :D */
+  height: 93%; 
   align-items: flex-end;
   justify-content: center;
   transform: translateX(-18%) skew(-16deg);
@@ -63,12 +67,10 @@ body {
 
 .main-nav li {
   display: block;
-  /* margin: .5rem 0; */
   text-align: left;
   transform: skew(16deg);
 }
 
-/* Apparition effect on links */
 .main-nav a {
   opacity: 0;
   transform: translateY(-10px);
@@ -108,7 +110,7 @@ padding: 0;
 .main-nav a {
 display: block;
 padding: 12px 0;
-color: #5A3B5D;
+color: #414141;
 font-size: 1.4em;
 text-decoration: none;
 font-weight: bold;
@@ -117,7 +119,7 @@ font-weight: bold;
 /* Burger Style */
 .open-main-nav {
 position: absolute;
-top: 30px;
+top: 20px;
 padding-top: 14px;
 right: 15px;
 z-index: 1000;
@@ -134,7 +136,7 @@ display: block;
 width: 28px;
 height: 4px;
 margin: 0 auto;
-background: #5A3B5D;
+background-color: #414141;;
 transform: skew(5deg);
 transition: all .275s;
 }
@@ -144,7 +146,7 @@ transition: all .275s;
 content: '';
 display: block;
 height: 100%;
-background: #5A3B5D;
+background-color: #414141;
 transition: all .275s;
 }
 
@@ -180,7 +182,7 @@ margin-top: .5em;
 text-transform: uppercase;
 font-weight: 500;
 text-align: center;
-color: #5A3B5D;
+color: #414141;
 }
 
 /* contact form */
@@ -201,7 +203,7 @@ button {
 
 .background-contact {
   display: flex;
-  min-height: 100vh;
+  padding-bottom: 10px;
 }
 
 .container-contact {

@@ -1,12 +1,12 @@
-
+/* sections */
 
 .all-content {
     width: 100%;
 }
 
 .img {
-    width: 96%;
-    padding: 16px 5px;
+    width: 100%;
+    padding: 15px 15px;
 }
 
 .container-main {
@@ -17,8 +17,7 @@
 
 .text-profile {
     width: 100%;
-    flex-direction: column;
-    align-self: center;
+    padding: 15px 15px;
 }
 
 .name {
@@ -27,12 +26,15 @@
     margin-bottom: 15px;
     color: #414141;
     font-family: 'Montserrat', sans-serif;
+    padding-left: 15px;
 }
 
 .hello {
     font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 15px;
+    margin-top: 30px;
+    padding-left: 15px;
     color: #919191;
     font-family: 'Montserrat', sans-serif;
 
@@ -44,6 +46,7 @@
     letter-spacing: 1.5px;
     color: #6A6A6A;
     font-family: 'Montserrat', sans-serif;
+    padding-left: 15px;
 
 }
 
@@ -84,15 +87,18 @@
     margin-bottom: 30px;
     height: 100%;
 }
+
 .graphic-skill {
-    padding: 16px 5px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .about-content {
     margin-bottom: 15%;
 }
+
 .text-about {
-    padding: 15px 5px;
+    padding: 15px 15px;
     font-size: 16px;
     margin-bottom: 15px;
     letter-spacing: 1.5px;
@@ -107,12 +113,10 @@
     padding: 0;
     padding-bottom: 20px;
     align-self: center;
-    margin-left: 15px;
 }
 
 .tcs {
     color: #494949;
-    
 }
 
 .tcs-name {
@@ -121,34 +125,33 @@
 }
 
 .experiencia {
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 60px;
+
+    padding-bottom: 40px;
 }
 
 .experiencia1 {
     display: flex;
-    margin-left: 5px;
+
 }
 
 .location {
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .disabled {
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .text-experiencia1 {
     width: 80%;
-    margin-left: 5px;
+    padding-left: 15px;
     display: flex;
 }
 
 .border-dotted {
-    height: 300%;
+    height: 400%;
     width: 2px;
-    margin-left: 40px;
+    margin-left: 50px;
     border-left: 3px dotted grey;
 }
 
@@ -156,47 +159,94 @@
     text-align: center;
     background-color: #494949;
     color: #ffffff;
-    padding: 40px 0px;
+    padding: 30px 0px;
 }
 
 .projects {
     text-align: center;
 }
 
+
 /* flip cards  of the projects */
 
+.card-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.card-wrapper {
+    display: inline-block;
+    perspective: 1000px;
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+}
+
+/* 
 
 
-.flip-container { perspective: 1000; }
+
+.front {
+    z-index: 1;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+
+.front:hover {
+    transform: rotateY(180deg);
+} */
+
+
+
+
+/* .flip-container { perspective: 1000px; }
 
 .flip-container:hover .flipper, .flip-container.hover .flipper {  		
     transform: rotateY(180deg);  	
   }    
   .flip-container, .front, .back {  	
-    width: 320px;  	
-    height: 200px;  
+    width: 380px;  	
+    height: 200px; 
+    object-fit: cover;
   }
   
   /* define a velocidade da transição */
-  .flipper {  	
+/* .flipper {  	
     transition: 0.6s;  	
     transform-style: preserve-3d;    	
     position: relative;  
-  }
-      
-  /* esconde o verso durante a animação */
-  .front, .back {  	
+  } */
+
+/* esconde o verso durante a animação */
+/* .front, .back {  	
     backface-visibility: hidden;    	
     position: absolute;  	
     top: 0;  	
    left: 0;  
   }
-      
-  /* frente posicionada sobre o verso */
-  .front { z-index: 2;  }    
-  
-  /* verso inicialmente escondido */
-  .back { transform: rotateY(180deg); }
+       */
+/* frente posicionada sobre o verso */
+/* .front { z-index: 2;  }     */
 
-
-
+/* verso inicialmente escondido */
+/* .back { transform: rotateY(180deg); } */
+*/

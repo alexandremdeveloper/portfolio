@@ -14,9 +14,6 @@
 </head>
 
 <body>
-
-
-
     <div class="container">
         <h1 class="name-logo">Alexandre Martins</h1>
         <button id="burger" class="open-main-nav">
@@ -25,7 +22,6 @@
         </button>
         <nav class="main-nav" id="main-nav">
             <ul>
-
                 <li>
                     <a href="#sobreMim">Sobre mim</a>
                 </li>
@@ -48,30 +44,26 @@
 
 
     <section id="sobreMim">
-        <div class="container-main">
-            <div class="text-profile">
-                <p class="hello">Olá, me chamo</p>
-                <h1 class="name">Alexandre Martins</h1>
-                <p class="text">Eu sou um desenvolvedor Front-End. Você está no meu Portfolio.<br>Espero que gostem,
-                    muito obrigado e um grande abraço.</p>
-            </div>
-
+        <div class="text-profile">
+            <p class="hello">Olá, me chamo</p>
+            <h1 class="name">Alexandre Martins</h1>
+            <p class="text">Eu sou desenvolvedor Front-End. Você está no meu Portfolio.<br>Espero que gostem, muito
+                obrigado e um grande abraço.</p>
         </div>
+
         <div class="img-profile">
             <img class="img" src="asset/eu.jpg">
         </div>
     </section>
 
-
-
-    <section id="projetosPessoais">
-        <div class="about-main">
-            <h3 class="about">sobre mim</h3>
-            <div class="horizontal-line">
-                <div class="top"></div>
-                <div class="bottom"></div>
-            </div>
+    <div class="about-main">
+        <h3 class="about">sobre mim</h3>
+        <div class="horizontal-line">
+            <div class="top"></div>
+            <div class="bottom"></div>
         </div>
+    </div>
+    <section id="skills">
         <div class="about-content">
             <div class="text-about">
                 <span class="welcome">Olá,</span>
@@ -79,7 +71,7 @@
                     Tecnogueto,
                     estudei Design Gráfico um tempo e aprendi um pouco da área, assim como Marketing.</p>
             </div>
-            <div class="graphic-skill">
+            <div id="habilidades" class="graphic-skill">
                 <div class="skill">
                     <p>HTML5</p>
                     <div class="skill-bar skill1 wow slideInLeft animated">
@@ -88,38 +80,48 @@
                 </div>
                 <div class="skill">
                     <p>CSS3</p>
-                    <div class="skill-bar skill2 wow slideInLeft animated">
-                        <span class="skill-count2">85%</span>
+                    <div class="skill-bar skill1 wow slideInLeft animated">
+                        <span class="skill-count1">85%</span>
                     </div>
                 </div>
                 <div class="skill">
                     <p>JAVASCRIPT</p>
-                    <div class="skill-bar skill4 wow slideInLeft animated">
-                        <span class="skill-count4">45%</span>
+                    <div class="skill-bar skill1 wow slideInLeft animated">
+                        <span class="skill-count1">45%</span>
                     </div>
                 </div>
                 <div class="skill">
                     <p>ANGULAR JS</p>
-                    <div class="skill-bar skill6 wow slideInLeft animated">
-                        <span class="skill-count6">40%</span>
+                    <div class="skill-bar skill1 wow slideInLeft animated">
+                        <span class="skill-count1">40%</span>
                     </div>
                 </div>
                 <div class="skill">
                     <p>ANGULAR 7</p>
-                    <div class="skill-bar skill6 wow slideInLeft animated">
-                        <span class="skill-count6">40%</span>
+                    <div class="skill-bar skill1 wow slideInLeft animated">
+                        <span class="skill-count1">40%</span>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <div class="about-main" id="projetosPessoais">
+        <h3 class="about">Projetos</h3>
+        <div class="horizontal-line">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+    <section>
         <div class="projects">
             <div class="text-about">
                 <p>Bom... essas são algumas habilidades que estou aprendendo e crescendo, vou deixar alguns dos projetos
                     que criei, baseado nas tecnologias que aprendi.</p>
             </div>
 
-            <div class="flip-container">
-                <div class="flipper">
+            <div class="card-container">
+                <div class="card">
                     <div class="front">
                         <img class="prints" src="/asset/jurassic-park.png">
                     </div>
@@ -129,26 +131,31 @@
                     </div>
                 </div>
             </div>
-            <div class="flip-container">
-                <div class="flipper">
-                    <div class="front">
-                        <img class="prints" src="/asset/cv.png">
-                    </div>
-                    <div class="back">
-                        <p class="text-about">Durante o curso, fiz meu currículo, em HTML e CSS.</p>
-                    </div>
-                </div>
+
+
+            <!-- <div class="front">
+                <img class="prints" src="/asset/jurassic-park.png">
             </div>
-            <div class="flip-container">
-                <div class="flipper">
-                    <div class="front">
-                        <img class="prints" src="/asset/gamejs.png">
-                    </div>
-                    <div class="back">
-                        <p class="text-about">Um game simples, feito em Javascript puro.</p>
-                    </div>
-                </div>
+            <div class="back">
+                <p class="text-about">Um site simples, falando sobre dinossauros e um pouco sobre a evolução nas
+                    telinhas</p>
             </div>
+
+            <div class="front">
+                <img class="prints" src="/asset/cv.png">
+            </div>
+            <div class="back">
+                <p class="text-about">Durante o curso, fiz meu currículo, em HTML e CSS.</p>
+            </div>
+            
+            <div class="front">
+                <img class="prints" src="/asset/gamejs.png">
+            </div>
+            <div class="back">
+                <p class="text-about">Um game simples, feito em Javascript puro.</p>
+            </div> -->
+
+
             <!-- <div class="prints">
                 
             </div>
@@ -159,19 +166,19 @@
         </div>
     </section>
 
-    <section id="experienciaMercado">
-        <div class="about-main">
-            <h3 class="about">Experiências</h3>
-            <div class="horizontal-line">
-                <div class="top"></div>
-                <div class="bottom"></div>
-            </div>
+    <div class="about-main">
+        <h3 class="about">Experiências</h3>
+        <div class="horizontal-line">
+            <div class="top"></div>
+            <div class="bottom"></div>
         </div>
+    </div>
 
+    <section id="experienciaMercado">
         <div class="experiencia1">
             <div>
-                <span class="tcs">TCS</span><br><span class="tcs-name">TATA CONSULTANCY
-                    SERVICES</span><br><span class="tcs">2019</span>
+                <span class="tcs text">TCS</span><br><span class="tcs text">TATA CONSULTANCY
+                    SERVICES</span><br><span class="tcs text">2019</span>
             </div>
             <div class="check">
                 <i class="material-icons location">location_on</i>
@@ -179,31 +186,32 @@
                 <i class="material-icons disabled">location_disabled</i>
                 <div class="border-dotted"></div>
             </div>
-
         </div>
-
-        <div class="text-experiencia1">
+        <div class="text-experiencia1 text">
             <p>Alocado na empresa VALE S.A. Desenvolvedor front-end, com AngularJs, Angular, Ionic, Javascript, HTML
                 e CSS, criando aplicações e testando novas tecnologias afim de melhorar e otimizar a empresa.</p>
         </div>
-
-
         <div class="experiencia">
             <div>
-                <span class="tcs-name">TECNOGUETO</span><br><span class="tcs">2019</span>
+                <span class="tcs text">TECNOGUETO</span><br><span class="tcs text">2019</span>
             </div>
-
-
-            <div class="text-experiencia1">
+            <div class="text-experiencia1 text">
                 <p>Um projeto social em que especializa alunos como um front-end, focando nos fundamentos, HTML, CSS e
                     JAVASCRIP, fazendo um bootcamp de 4 meses. Com dois meses de curso fui indicado para uma vaga de
                     desenvolvedor front-end na TCS, tendo como meu cliente a VALE.</p>
             </div>
         </div>
-
     </section>
+    
+    <div class="about-main contacts" id="contatos">
+        <h3 class="about">Contato</h3>
+        <div class="horizontal-line">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
 
-    <section id="contatos">
+    <section>
 
         <div class="background-contact">
             <div class="container-contact">
