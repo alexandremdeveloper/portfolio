@@ -23,19 +23,19 @@
         <nav class="main-nav" id="main-nav">
             <ul>
                 <li>
-                    <a href="#sobreMim">Sobre mim</a>
+                    <a href="#sobreMim" onclick="myFunction()">Sobre mim</a>
                 </li>
                 <li>
-                    <a href="#skills">Habilidades</a>
+                    <a href="#skills" onclick="myFunction()">Habilidades</a>
                 </li>
                 <li>
-                    <a href="#projetosPessoais">Projetos</a>
+                    <a href="#projetosPessoais" onclick="myFunction()">Projetos</a>
                 </li>
                 <li>
-                    <a href="#experienciaMercado">Experiências</a>
+                    <a href="#experienciaMercado" onclick="myFunction()">Experiências</a>
                 </li>
                 <li>
-                    <a href="#contatos">Contato</a>
+                    <a href="#contatos" onclick="myFunction()">Contato</a>
                 </li>
             </ul>
         </nav>
@@ -114,21 +114,32 @@
         </div>
     </div>
     <section>
+
+        <div class="text-about">
+            <p>Bom... essas são algumas habilidades que estou aprendendo e crescendo, vou deixar alguns dos projetos
+                que criei, baseado nas tecnologias que aprendi.</p>
+        </div>
         <div class="projects">
-            <div class="text-about">
-                <p>Bom... essas são algumas habilidades que estou aprendendo e crescendo, vou deixar alguns dos projetos
-                    que criei, baseado nas tecnologias que aprendi.</p>
+            <div class="flip-card text-about">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="prints" src="/asset/jurassic-park.png">
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="text-about">Um site simples, falando sobre dinossauros e um pouco sobre a evolução nas
+                            telinhas</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="flip">
+            <!-- <div class="flip">
                 <div class="front">
-                    <img class="prints" src="/asset/jurassic-park.png">
+                    
                 </div>
                 <div class="back">
-                    <p class="text-about">Um site simples, falando sobre dinossauros e um pouco sobre a evolução nas
-                        telinhas</p>
+                    <p class="text-about"></p>
                 </div>
-            </div>
+            </div> -->
 
 
 
@@ -139,8 +150,7 @@
                 <img class="prints" src="/asset/jurassic-park.png">
             </div>
             <div class="back">
-                <p class="text-about">Um site simples, falando sobre dinossauros e um pouco sobre a evolução nas
-                    telinhas</p>
+                
             </div>
 
             <div class="front">
